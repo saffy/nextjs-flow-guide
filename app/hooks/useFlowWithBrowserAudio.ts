@@ -5,7 +5,7 @@ import {
   useFlow,
   useFlowEventListener,
 } from "@speechmatics/flow-client-react";
-import { getJWT } from "../actions";
+import { getJWT } from "@/app/actions";
 import {
   usePCMAudioListener,
   usePCMAudioRecorder,
@@ -106,4 +106,3 @@ export function useFlowWithBrowserAudio() {
 
   return { startSession, stopSession };
 }
-
